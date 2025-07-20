@@ -1,51 +1,41 @@
-
-body{
+body {
   margin: 0;
   padding: 0;
   display: flex;
-  place-items: start;              /* PLACE ITEMS IS THE COMBO OF ALIGN-ITEMS(ver) AND JUSTIFY CONTENT(horiz) */
+  place-items: start;
 }
 
-
-
-.to_do_list{
-
+.to_do_list {
   font-family: Arial, sans-serif;
   margin-left: 40px;
   margin-top: 50px;
-
 }
 
-
-h1{
-  font-size: 2.6rem;      /* rem stands for “root em”.
-                        If the root (<html>) font size is 16px (the default in most browsers), then 4rem = 4 × 16px = 64px. */
-  margin-left:-8px;
-  margin-top:0px;
+h1 {
+  font-size: 2.6rem;
+  margin-left: -8px;
+  margin-top: 0px;
   position: sticky;
   z-index: 1;
 }
 
-
-.below_heading{
-  margin-top:70px;
+.below_heading {
+  margin-top: 70px;
 }
 
-
-input[type='text'] {                        /* ###### TO TARGET THE INPUT TEXT BOX */
+input[type='text'] {
   font-size: 1.2rem;
   padding: 12px;
   border: 2px solid rgba(204, 204, 204, 0.5);
   border-radius: 5px;
   color: white;
-  height:20px;
+  height: 20px;
   width: 300px;
   margin-left: 0px;
   margin-bottom: 30px;
 }
 
-
-button{
+button {
   font-size: 16px;
   font-weight: bold;
   padding: 10px 20px;
@@ -57,44 +47,39 @@ button{
   transition: background-color 0.5s ease;
 }
 
-
-.add_button{
+.add_button {
   background-color: rgb(83, 193, 92);
-  border-color:green;
+  border-color: green;
   margin-left: 20px;
 }
 
-.add_button:hover{
+.add_button:hover {
   background-color: rgb(59, 165, 68);
   border-color: black;
 }
 
-
-.delete_button{
+.delete_button {
   background-color: rgb(242, 51, 13);
-  border-color:red;
+  border-color: red;
   margin-left: 250px;
 }
 
-.delete_button:hover{
+.delete_button:hover {
   background-color: rgb(194, 41, 10);
   border-color: black;
 }
 
-
 .task_up_button,
-.task_down_button{
+.task_down_button {
   background-color: rgb(234, 231, 231);
-  border-color:rgb(174, 189, 194);
+  border-color: rgb(174, 189, 194);
 }
 
-
 .task_up_button:hover,
-.task_down_button:hover{
+.task_down_button:hover {
   background-color: rgb(186, 221, 228);
   border-color: black;
 }
-
 
 li {
   font-size: 18px;
@@ -106,14 +91,12 @@ li {
   border: 3px solid rgba(217, 217, 217, 0.7);
   border-radius: 5px;
   align-items: center;
-  color:black;
-  width:100%;
-  display:flex;
-
+  color: black;
+  width: 100%;
+  display: flex;
 }
 
-
-.text{                          /* SO THAT THE TASK DOESNT WRAP OR JUMP TO NEXT LINE */
+.text {
   white-space: nowrap;
-  flex:1;
+  flex: 1;
 }
