@@ -1,3 +1,6 @@
+
+// <input type="date"/>  for calendar
+
 import ToDoList from "./MyComponent.jsx";
 
 function App(){
